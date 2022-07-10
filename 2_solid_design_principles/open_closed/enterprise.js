@@ -1,3 +1,5 @@
+// (Open-Cloed Principle) => Open for extension (inheritance), closed for modification (modified a defined class)
+
 let Color = Object.freeze({
   red: "red",
   green: "green",
@@ -17,8 +19,6 @@ class Product {
     this.size = size;
   }
 }
-
-// (Open-Cloed Principle) => Open for extension (inheritance), closed for modification (modified a defined class)
 
 class ProductFilter {
   filterByColor(products, color) {

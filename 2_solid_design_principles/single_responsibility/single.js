@@ -1,5 +1,6 @@
 // Single Responsibility Principle
-// a class should have only one primary responsibility only.
+// a class should have only one reason to change
+// Seperation of concerns - different classes handling different, independent task/problems
 
 import fs from "fs";
 

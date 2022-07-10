@@ -1,6 +1,8 @@
 // ISP: Interface Segregation Principle
 // segregate (split up) interface
 // people don't implement what they need
+// interface should keep as less code as needed (don't make a huge interface)
+// YAGNI - You Ain't Goint to Need It
 
 // !!! Since js use duck typing so we dont have real interface (or similar) in js,
 // it is simulating.
