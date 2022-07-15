@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jasmine": "^4.2.1"
+  },
+  "scripts": {
+    "test": "jasmine"
+  }
+}
