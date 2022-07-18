@@ -16,5 +16,6 @@
 - Objects can use other objects via inheritance/composition
 - Some composed and singular objects need similar/identical behaviors(api)
 - Composite design pattern lets us treat both types of objects uniformly
-- JavaScript supports iteration with Symbol.iterator
-- A single object can make itself iterable yielding this
+- JavaScript supports iteration with Symbol.iterator (!!!)
+- A single object can make itself iterable yielding this (!!!)
+- 
