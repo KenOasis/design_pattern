@@ -27,14 +27,17 @@ class CallSenter {
     this.standyBy = new Event();
     this.units = [];
   }
+
+  // A new unit standbys
   ready(p) {
     this.units.push(p);
     let token = this.standyBy.subscribe(p.handler.bind(p));
     return token;
   }
 
+  // dipatch a unit (the people at the head of queue)
   dispatch() {
-    let p = this.units.pop();
+    let p = this.units.shift();
     this.standyBy.fire(p, null);
     this.standyBy.unsubscribe(p.token);
   }
@@ -60,5 +63,7 @@ john.token = callCenter.ready(john);
 jane.token = callCenter.ready(jane);
 james.token = callCenter.ready(james);
 
+// Dispatch john; jane and james recieve message
 callCenter.dispatch();
+// Dispatch jane: james recieve message
 callCenter.dispatch();
